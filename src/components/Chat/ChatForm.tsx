@@ -1,5 +1,5 @@
 import { ChatRequestOptions } from "ai";
-import { SendHorizontal } from "lucide-react";
+import { FilePlus, SendHorizontal } from "lucide-react";
 import { useRef, useState } from "react";
 
 interface ChatFormProps {
@@ -79,15 +79,15 @@ export default function ChatForm({
             />
             <label
               htmlFor="file-upload"
-              className="px-4 py-2 bg-gray-700 text-white rounded-full shadow cursor-pointer hover:bg-gray-600 dark:bg-gray-600 dark:hover:bg-gray-500"
+              className="p-4 bg-gray-700 text-white rounded-full shadow cursor-pointer hover:bg-gray-600 dark:bg-gray-600 dark:hover:bg-gray-500"
             >
-              Upload Files
+              <FilePlus size={20} />
             </label>
             <button
               type="submit"
-              className="px-4 py-2 bg-gray-700 text-white rounded-full shadow hover:bg-gray-600 dark:bg-gray-600 dark:hover:bg-gray-500"
+              className="px-4 py-4 bg-gray-700 text-white rounded-full shadow hover:bg-gray-600 dark:bg-gray-600 dark:hover:bg-gray-500"
             >
-              <SendHorizontal size={24} />
+              <SendHorizontal size={20} />
             </button>
           </div>
         </div>
