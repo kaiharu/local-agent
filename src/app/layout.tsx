@@ -33,10 +33,8 @@ export default function RootLayout({
           <Nav />
           <div className="relative h-screen w-full grow overflow-y-auto">
             <Header />
-            <main className="relative box-border flex min-h-[calc(100vh-81px)] w-full justify-center p-4">
-              <div className="w-full max-w-[1200px] rounded-lg p-8">
-                {children}
-              </div>
+            <main className="relative box-border flex h-[calc(100vh-72px)] w-full justify-center">
+              <div className="w-full max-w-[1200px]">{children}</div>
             </main>
           </div>
         </div>
