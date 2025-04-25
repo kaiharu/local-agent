@@ -14,14 +14,14 @@ export default function Nav() {
       } border-r border-zinc-600 bg-zinc-900 p-4 text-gray-900`}
     >
       <button
-        className="mb-4 rounded p-2 text-white hover:text-zinc-400 hover:text-white"
+        className="mb-4 rounded p-2 text-white hover:bg-zinc-600"
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
       <nav className={isOpen ? "block" : "hidden"}>
         <ul>
-          <li className="mb-2">
+          <li className="mb-2 px-4 py-2 rounded-md hover:bg-zinc-600">
             <Link href="/" className="text-white">
               New Chat
             </Link>

@@ -4,9 +4,9 @@ import Image from "next/image";
 export default function Header() {
   return (
     <header className="sticky top-0 z-999 w-full p-4 text-white bg-zinc-800">
-      <div className="flex w-full items-center justify-between">
+      <div className="flex w-full items-center justify-between max-w-[1200px] mx-auto">
         <h1 className="text-xl font-bold">
-          <Link href="/" className="hover:underline flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2">
             <Image
               aria-hidden
               src="/logo.png"

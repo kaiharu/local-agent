@@ -15,7 +15,7 @@ export default function ChatMessages({ messages, status }: ChatMessagesProps) {
     }
   }, [messages]);
   return (
-    <div className="flex flex-col w-full p-4 pb-36 mx-auto stretch">
+    <div className="flex flex-col w-full p-4 pb-42 mx-auto stretch">
       <ChatMessageItem messages={messages} />
       <div className="flex justify-center">
         <RiseLoader

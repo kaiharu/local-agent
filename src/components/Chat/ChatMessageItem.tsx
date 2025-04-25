@@ -11,7 +11,7 @@ export default function ChatMessageItem({ messages }: ChatMessageItemProps) {
       {messages.map((m) => (
         <div
           key={m.id}
-          className={`p-4 mb-2
+          className={`message-item p-4 mb-2
             ${
               m.role === "user"
                 ? "bg-zinc-300 dark:bg-zinc-700 w-[80%] self-end rounded-xl shadow-xl"
