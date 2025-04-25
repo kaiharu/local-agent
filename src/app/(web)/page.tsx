@@ -1,9 +1,22 @@
-export default function HomePage() {
+"use client";
+
+import { useChat } from "@ai-sdk/react";
+import ChatForm from "@/components/Chat/ChatForm";
+import ChatMessages from "@/components/Chat/ChatMessages";
+
+export default function Chat() {
+  const { messages, input, handleInputChange, handleSubmit, status } =
+    useChat();
+
   return (
-    <>
-      <h1 className="mb-4 text-4xl font-bold text-white text-center">
-        Welcome to Local AI Agent
-      </h1>
-    </>
+    <div className="relative h-full">
+      <ChatMessages messages={messages} status={status} />
+      <ChatForm
+        input={input}
+        handleInputChange={handleInputChange}
+        handleSubmit={handleSubmit}
+        status={status}
+      />
+    </div>
   );
 }

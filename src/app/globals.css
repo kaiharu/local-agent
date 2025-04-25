@@ -24,3 +24,42 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.message-item hr {
+  margin: 1.5rem 0;
+}
+.message-item p {
+  margin-bottom: 1rem;
+}
+.message-item h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.message-item h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.message-item h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.message-item pre {
+  background: var(--background);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+.message-item code {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+}
+.message-item a {
+  color: #fe41b9;
+  text-decoration: none;
+}
+.message-item a:hover {
+  text-decoration: underline;
+}
