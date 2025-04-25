@@ -64,7 +64,7 @@ export default function ChatForm({
             onKeyDown={handleKeyDown}
             rows={2}
           />
-          <div className="flex items-center justify-between p-2">
+          <div className="flex items-center justify-between gap-x-2 p-2">
             <input
               type="file"
               onChange={(event) => {
@@ -83,6 +83,16 @@ export default function ChatForm({
             >
               <FilePlus size={20} />
             </label>
+            {files && (
+              <div className="grow flex flex-wrap gap-2 mt-2">
+                {Array.from(files).map((file, index) => (
+                  <span key={index}>
+                    {file.name}
+                    {index < files.length - 1 && ", "}
+                  </span>
+                ))}
+              </div>
+            )}
             <button
               type="submit"
               className="px-4 py-4 bg-gray-700 text-white rounded-full shadow hover:bg-gray-600 dark:bg-gray-600 dark:hover:bg-gray-500"
