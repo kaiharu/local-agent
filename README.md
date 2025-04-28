@@ -1,4 +1,4 @@
-This is a Local AI Agent with Azure OpenAI LLM Model.
+This is a Local Chat Agent with Azure OpenAI gpt-4o Model.
 
 ## Getting Started
 
