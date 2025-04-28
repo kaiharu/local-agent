@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Local AI Agent",
-  description: "This is a AI Agent only for YOU",
+  title: "Local Chat Agent",
+  description: "This is a AI Chat Agent only for YOU",
 };
 
 export default function RootLayout({

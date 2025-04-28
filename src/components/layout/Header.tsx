@@ -14,7 +14,7 @@ export default function Header() {
               width={40}
               height={40}
             />
-            Local AI Agent
+            Local Chat Agent
           </Link>
         </h1>
       </div>
