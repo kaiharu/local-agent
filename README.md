@@ -1,4 +1,8 @@
-This is a Local AI Agent with Azure OpenAI LLM Model.
+This is a Local Chat Agent with Azure OpenAI gpt-4o Model.
+
+## Create Azure OpenAI account
+
+See [this blog](https://qiita.com/kaiparu/items/7e7cbe53b89b24b2d36c)
 
 ## Getting Started
 
